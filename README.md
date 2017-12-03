@@ -3,6 +3,7 @@
 required
  - [gcloud sdk](https://cloud.google.com/sdk/downloads)
  - app engine sdk / go
+ - GOMAXPROCS > 1
 
 ## Install
 
@@ -35,6 +36,6 @@ $ dep ensure
 ## Hangs
 
 ```
-$ goapp test -v ./...
+$ goapp test -v ./bar ./foo
 ```
 
